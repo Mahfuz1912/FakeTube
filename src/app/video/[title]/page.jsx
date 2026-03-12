@@ -142,10 +142,12 @@ const Detailspage = async ({ params }) => {
 
                 <div className="mt-4 flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3 min-w-0">
-                    <image
+                    <Image
                       id="channelAvatar"
                       src={video?.channelAvatar}
                       alt={video?.channelName}
+                      width={40}
+                      height={40}
                       className="w-10 h-10 rounded-full object-cover bg-[#262626] ring-1 ring-white/10 shrink-0"
                       loading="lazy"
                     />
@@ -198,6 +200,8 @@ const Detailspage = async ({ params }) => {
                         <Image
                           src={simVideo.thumbnailURL}
                           alt={simVideo.videoTitle}
+                          width={176}
+                          height={99}
                           loading="lazy"
                           className="w-full h-full object-cover group-hover:opacity-90 transition-opacity"
                         />

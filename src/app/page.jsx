@@ -16,7 +16,9 @@ const page = () => {
                 <Image
                   src={post.thumbnailURL}
                   alt={post.videoTitle}
-                  loading="lazy"
+                  width={320}
+                  height={180}
+                  loading="eager"
                   className="w-full h-full object-cover group-hover:opacity-90 transition-opacity"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-linear-to-t from-black/60 via-black/0 to-black/0"></div>
@@ -29,6 +31,8 @@ const page = () => {
                   <Image
                     src={post.channelAvatar}
                     alt={post.channelName}
+                    width={36}
+                    height={36}
                     loading="lazy"
                     className="w-9 h-9 rounded-full object-cover bg-[#262626] ring-1 ring-white/10"
                   />
